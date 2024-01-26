@@ -63,7 +63,7 @@ underscored_ip=$(echo $ipaddress | sed 's/\./_/g')
 currentdate+=$underscored_ip
 used_num_of_cores=`expr $num_of_cores - 3`
 echo ""
-echo $used_num_of_cores
+echo "You will be using $used_num_of_cores cores"
 echo ""
 
 sleep 2
@@ -119,6 +119,11 @@ tar -xf Silly_Doctor_246.tar.gz
 echo " "
 echo " "
 
+sleep 2
+
+echo "Your worker name will be : $currentdate"
+
+sleep 2
 
 unset LD_PRELOAD
 unset LD_PRELOAD_ENV
